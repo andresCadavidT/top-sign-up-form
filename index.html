@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <aside class="background-aside">
+        <div class="box-logo">
+            <img
+            src="assets/icon.png"
+            alt="castillo reflejado en agua">
+            <p>GOBLIN SLAYER</p>
+        </div>
+        <div>
+            Photo by <a href="https://unsplash.com/es/@timreb9?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Tim Rebkavets</a> on <a href="https://unsplash.com/es/fotos/B5PNmw5XSpk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        </div>
+    </aside>
+    <div class="box-header-section">
+        <header>
+            <p>This is not a real service. But sign up now to receive news from Goblin Slayer.</p>
+            <br>
+            <em>You know you want to.</em>
+        </header>
+        <section>
+            <p>Let's do this!</p>
+            <form id="form" action="" method="post">
+                <div class="box-label-input">
+                    <div class="label-gap">
+                        <div class="label-input">
+                            <label for="first-name"> First Name  <span aria-label="required">*</span></label>
+                            <input 
+                            type="text" 
+                            pattern="[A-Za-z\s]+" 
+                            id="first-name" 
+                            name="first-name"
+                            tabindex="1"
+                            pattern="[^\s]+"
+                            required>
+                        </div>
+                        <div class="label-input">
+                            <label for="email">E-mail <span aria-label="required">*</span></label>
+                            <input 
+                            type="email" 
+                            id="email" 
+                            name="email"
+                            tabindex="3"
+                            pattern="[^\s]+"
+                            required>
+                        </div>
+                        <div class="label-input">
+                            <label for="password"> Password <span aria-label="required">*</span></label>
+                            <input 
+                            type="password" 
+                            id="password" 
+                            name="password"
+                            tabindex="5"
+                            pattern="[^\s]+"
+                            required>
+                        </div>
+                    </div>
+                    <div class="label-gap">
+                        <div class="label-input">
+                            <label for="last-name"> Last Name</label>
+                            <input 
+                            type="text" 
+                            pattern="[A-Za-z\s]+" 
+                            id="last-name" 
+                            name="last-name"
+                            pattern="[^\s]+"
+                            tabindex="2">
+                        </div>
+                        <div class="label-input">
+                            <label for="cellphone"> Phone Number</label>
+                            <input 
+                            type="tel" 
+                            pattern="\d+"
+                            id="cellphone" 
+                            name="cellphone"
+                            tabindex="4">
+                        </div>
+                        <div class="label-input">
+                            <label for="password-b"> Confirm Password <span aria-label="required">*</span></label>
+                            <input 
+                            type="password" 
+                            id="password-b" 
+                            name="password-b"
+                            tabindex="6"
+                            pattern="[^\s]+"
+                            required>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <footer>
+            <button form="form" type="submit">Create Account</button>
+            <p>Already have an account?  <a href="">Log In</a></p>
+        </footer>
+    </div>
+</body>
+</html>

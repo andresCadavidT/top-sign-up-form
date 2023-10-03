@@ -1,0 +1,199 @@
+@font-face {
+    font-family: 'VTCGoblinHand';
+    src: url('assets/VTCGoblinHand.woff2') format('woff2'),
+        url('assets/VTCGoblinHand.woff') format('woff'),
+        url('assets/VTCGoblinHand.ttf') format('truetype'),
+        url('assets/VTCGoblinHand.svg#VTCGoblinHand') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+:root{
+    --standar-color: rgb(219, 188, 188); 
+}
+
+body{
+    display: flex;
+    font-size: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a, a:visited{
+    text-decoration: none;
+}
+
+aside a{
+    color: white;
+}
+
+aside a:visited {
+    color: white;
+}
+
+aside{
+    display: flex;
+    align-items: flex-end;
+    width: 30vw;
+    height: 100vh;
+    background-image: url("assets/castle.jpg");
+    background-image: url("assets/castle.jpg");
+    background-size: cover ; 
+    background-position: left; 
+    justify-content: center;
+    color: white;
+    font-size: 0.6rem;
+    padding: 10px;
+}
+
+.box-logo{
+    background-color: rgba(0, 0, 0, 0.45);
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    font-family: 'VTCGoblinHand', sans-serif;
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top: 10rem;
+}
+
+.box-logo img{
+    width: 70px;
+    height: auto;
+}
+
+.box-header-section{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    width: 70vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 90px 90px 30px 30px;
+    background-color: rgb(247, 247, 247);
+    font-family: Helvetica, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+
+/* form style */
+
+section{
+    width: 70vw;
+    height: 30vh;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgb(206, 206, 206);
+}
+
+section > p{
+    font-family: Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.box-label-input{
+    display: flex;
+    gap: 40px
+}
+
+.label-gap{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.label-input{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.label-input label{
+    font-size: 0.7rem;
+    font-family: Helvetica, sans-serif;
+    margin-bottom: 2px;
+}
+
+.label-input input{
+    height: 1.8rem;
+    padding: 5px;
+    border: 1px solid rgb(226, 226, 226);
+    border-radius: 3px;
+}
+
+/* form style client */
+
+input{
+    outline: none;
+    border: 1px solid rgb(129, 129, 129);
+}
+
+input:focus{
+    box-shadow: 0px 0px 1px 1px orange;
+}
+
+.custom-pwd-invalid{
+    box-shadow: 0px 0px 1px 1px red;
+}
+
+.custom-pwd{
+    box-shadow: 0px 0px 1px 1px blue;
+}
+
+.valid{
+    box-shadow: 0px 0px 1px 1px blue;
+}
+
+.invalid{
+    box-shadow: 0px 0px 1px 1px red;
+}
+
+
+/* footer style */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 20px;
+}
+
+footer button{
+    width: 200px;
+    padding: 10px 35px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--standar-color);
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 800;
+    box-shadow: 0px 2px 3px 0px rgb(214, 214, 214);
+}
+
+footer p{
+    font-family: Helvetica, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 800;
+}
+
+footer a{
+    color: var(--standar-color)
+}
